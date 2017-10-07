@@ -12,5 +12,5 @@ for i in range(1, len(challenge) + 1):
 print('Challenge in Decimal: {}'.format(challengeDecimal))
 challengeHex = str(hex(challengeDecimal)).replace('0x', '')
 print('Challenge in Hex:     {}'.format(challengeHex))
-challengeASCII = unhexlify(challengeHex)
-print('Challenge in ASCII:   {}'.format(challengeASCII.decode('utf-8')))
+challengeASCII = unhexlify(challengeHex).decode('utf-8')
+print('Challenge in ASCII:   {}'.format(challengeASCII))
